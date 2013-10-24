@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/sv_background" >
+    
+	<!-- focusable and focusableInTouchMode are dummy item to prevent AutoCompleteTextView from receiving focus -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+                           
+	    <TextView
+	        android:id="@+id/TextView01"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:padding="15dip"
+	        android:text="@string/crypt"
+	        android:textSize="18sp" />
+	
+	    <TextView
+	        android:id="@+id/TextView03"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dip"
+	        android:text="@string/keystream"
+	        android:textSize="18sp" />
+	
+	    <TextView
+	        android:id="@+id/keyStreamTextView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dip"
+	        android:text="@string/keystream"
+	        android:textSize="18sp" />
+	
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dip"
+	        android:text="@string/clear_text"
+	        android:textSize="18sp" />
+	
+	    <EditText
+	        android:id="@+id/cleartextEditText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textMultiLine|textNoSuggestions" >
+	        <requestFocus />
+	    </EditText>
+	
+	    <TextView
+	        android:id="@+id/TextView02"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="5dip"
+	        android:text="@string/cipher_text"
+	        android:textSize="18sp" />
+	
+	    <EditText
+	        android:id="@+id/ciphertextEditText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textMultiLine|textNoSuggestions" />
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <Button
+	            android:id="@+id/encryptButton"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="154dp"
+	            android:layout_height="50dp"
+	            android:layout_weight="1"
+	            android:text="@string/encrypt" />
+	
+	        <Button
+	            android:id="@+id/decryptButton"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="154dp"
+	            android:layout_height="50dp"
+	            android:layout_weight="1"
+	            android:text="@string/decrypt" />
+	    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

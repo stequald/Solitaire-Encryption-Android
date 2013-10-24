@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/sv_background" >  
+      
+   <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+                                  
+	   <TextView
+	        android:id="@+id/TextView01"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"        
+	        android:text="@string/set_up_deck"
+	        android:padding="15dip"
+	        android:textSize="18sp"
+	        android:gravity="center" />
+	
+	    <TextView
+	        android:id="@+id/textView"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/password"
+	        android:padding="5dip"
+	        android:textSize="18sp" />
+	
+	    <EditText
+	        android:id="@+id/keyEditText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textMultiLine|textNoSuggestions" >
+	
+	        <requestFocus />
+	    </EditText>
+	
+	    <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	
+	        <Button
+	            android:id="@+id/keyButton"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="154dp"
+	            android:layout_height="50dp"
+	            android:layout_weight="1"
+	            android:text="@string/key_deck" />
+	
+	        <Button
+	            android:id="@+id/shuffleButton"
+	            style="?android:attr/buttonStyleSmall"
+	            android:layout_width="154dp"
+	            android:layout_height="50dp"
+	            android:layout_weight="1"
+	            android:text="@string/shuffle_deck" />
+	    </LinearLayout>
+	
+	    <TextView
+	        android:id="@+id/TextView02"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/deck"
+	        android:padding="5dip"
+	        android:textSize="18sp" />
+	
+	    <EditText
+	        android:id="@+id/deckEditText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textMultiLine" />
+	
+
+    </LinearLayout>
+</ScrollView>
+    
