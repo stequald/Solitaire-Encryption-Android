@@ -11,7 +11,7 @@ Step 1 is to set the deck. You can do it manually or use a password to key the d
 
 It is best to use the solitaire encryption algorithm by hand or in your and head and to just use the app as a checker. Mistakes can easily be made when a person is doing it manually.
 
-Build And Run
+Run
 ============================
 
 To run the app simply import the project into eclipse.
